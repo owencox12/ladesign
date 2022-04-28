@@ -1,0 +1,116 @@
+.main {
+    min-height: 100vh;
+    background: url(../../image/bgMain.png) center center / cover no-repeat;
+    position: relative;
+    &__mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.6);
+        width: 100%;
+        height: 100%;
+    }
+    &__header {
+        padding-top: 30px;
+        border-bottom: 1px solid #878787;
+        padding-bottom: 30px;
+        position: relative;
+        top: -100%;
+        &_logo {
+            cursor: pointer;
+        }
+        &_active {
+            width: 100%;
+            height: 50px;
+            background: #000;
+            left: 0;
+            border: none;
+            z-index: 2000;
+            position: fixed;
+            transition: all .3s;
+            top: 0;
+        }
+        &_burger {
+            display: none;
+            &_list {
+                display: none;
+            }
+        }
+        &_logo {
+            z-index: 1000;
+        }
+        &_menu {
+            z-index: 1000;
+            &_list {
+                display: flex;
+                &_type {
+                    margin: 0 25px;
+                    a {
+                        font-family: 'Roboto Condensed';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        letter-spacing: 0.15em;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        &_link {
+            z-index: 1000;
+            display: flex;
+            &_phone {
+                margin-left: 10px;
+                a {
+                    font-family: 'Roboto Condensed';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+            }
+        }
+        &_wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__title {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 140px;
+        line-height: 164px;
+        text-align: center;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        z-index: 1500;
+        position: relative;
+        padding-top: 165px;
+    }
+    &__descr {
+        z-index: 1500;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 632px;
+        margin: 0 auto;
+        margin-top: 10px;
+        position: relative;
+    }
+}

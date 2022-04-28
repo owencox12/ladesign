@@ -1,0 +1,76 @@
+.about {
+    min-height: 900px;
+    background: #fff;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    &__title {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #777777;
+        padding-top: 150px;
+    }
+    &__item {
+        width: 50%;
+        margin-top: 50px;
+        &_title {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            color: #777777;
+            width: 514px;
+        }
+        &_list {
+            &_menu {
+                &_descr {
+                    font-size: 15px;
+                    margin-top: 15px;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: all .3s;
+                    font-family: 'Roboto Condensed';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 27px;
+                    letter-spacing: 0.12em;
+                    text-transform: uppercase;
+                    color: #777777;
+                    &_active {
+                        overflow: visible;
+                    }
+                }
+                &_type {
+                    margin: 46.5px 0;
+                    font-family: 'Roboto Condensed';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 27px;
+                    letter-spacing: 0.12em;
+                    text-transform: uppercase;
+                    color: #777777;
+                    position: relative;
+                    width: 390px;
+                    &::after {
+                        content: url(../../image/arrow.png);
+                        // margin-left: 50px;
+                        position: absolute;
+                        right: -20%;
+                        top: 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

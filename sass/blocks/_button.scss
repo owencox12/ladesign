@@ -1,0 +1,16 @@
+.button {
+    &--tabs {
+        width: 300px;
+        height: 70px;
+        background: none;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #393246;
+        border: 1px solid #000;
+    }
+}
